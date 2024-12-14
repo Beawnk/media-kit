@@ -15,7 +15,7 @@
                                 <img :src="item.img" :alt="item.name">
                             </div>
                             <div class="media-info">
-                                <h5>{{ item.followers }}</h5>
+                                <h5>{{ formatNumber(item.followers) }}</h5>
                                 <p>Followers</p>
                             </div>
                         </div>
@@ -31,6 +31,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import formatNumber from '@/composables/formatNumber.js';
 
 const media = ref([]);
 
@@ -132,6 +133,14 @@ h2 {
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
+                        }
+                    }
+                    .media-info {
+                        h5 {
+                            margin-bottom: 5px;
+                        }
+                        p {
+                            font-size: var(--text-medium);
                         }
                     }
                 }
