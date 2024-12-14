@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Twitch",
+        "followers": 21000,
+        "link": "https://www.twitch.tv/yourchannel",
+        "img": "social-media/Twitch.png"
+    },
+    {
+        "name": "YouTube",
+        "followers": 145000,
+        "link": "https://www.youtube.com/yourchannel",
+        "img": "social-media/YouTube.png"
+    },
+    {
+        "name": "TikTok",
+        "followers": 25000,
+        "link": "https://www.tiktok.com/@yourprofile",
+        "img": "social-media/TikTok.png"
+    },
+    {
+        "name": "Instagram",
+        "followers": 5000,
+        "link": "https://www.instagram.com/yourprofile",
+        "img": "social-media/Instagram.png"
+    },
+    {
+        "name": "X",
+        "followers": 11000,
+        "link": "https://www.x.com/yourprofile",
+        "img": "social-media/X.png"
+    },
+    {
+        "name": "Facebook",
+        "followers": 1000,
+        "link": "https://www.facebook.com/yourpage",
+        "img": "social-media/Facebook.png"
+    }
+]
