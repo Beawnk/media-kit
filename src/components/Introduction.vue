@@ -1,6 +1,6 @@
 <template>
   <section id="introduction" class="container">
-    <div class="grid">
+    <div class="grid anim-1">
       <div class="media-kit item">
         <h3>Your Name</h3>
         <h1>Media Kit</h1>
@@ -23,21 +23,24 @@
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/style/main';
+
+#introduction::before {
+    content: '';
+    width: var(--side);
+    height: var(--side);
+    position: absolute;
+    top: var(--top);
+    left: -105px;
+    border-radius: var(--border-radius);
+    background-color: var(--highlight-color-4);
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 25px;
-    &::before {
-        content: '';
-        width: var(--side);
-        height: var(--side);
-        position: absolute;
-        top: var(--top);
-        left: -105px;
-        border-radius: var(--border-radius);
-        background-color: var(--highlight-color-4);
-    }
     .item {
         border-radius: var(--border-radius);
         overflow: hidden;

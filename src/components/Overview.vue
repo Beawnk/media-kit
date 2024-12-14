@@ -1,5 +1,5 @@
 <template>
-  <section id="overview" class="container">
+  <section id="overview" class="container anim-2">
     <div>
         <h2>Overview</h2>
         <div class="main-grid">
@@ -52,6 +52,8 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
+@use '../assets/style/main';
+
 h2 {
     margin-bottom: 50px;
     display: flex;
