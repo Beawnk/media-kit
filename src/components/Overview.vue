@@ -19,7 +19,7 @@
                                 <p>Followers</p>
                             </div>
                         </div>
-                        <a :href="item.link" class="link">{{ item.link }}</a>
+                        <a :href="item.link" class="link">{{ cleanLink(item.link) }}</a>
                     </div>
                 </div>
             </div>
@@ -32,6 +32,7 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import formatNumber from '@/composables/formatNumber.js';
+import cleanLink from '@/composables/cleanLink.js';
 
 const media = ref([]);
 
