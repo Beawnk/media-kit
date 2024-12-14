@@ -151,7 +151,7 @@ table {
 }
 
 /* media  */
-/* @media (max-width: 1920px) {
+@media (max-width: 1910px) {
     :root {
         --title-big: 100px;
         --title-medium: 64px;
@@ -169,4 +169,4 @@ table {
         --top: 100px;
         --section: 60px;
     }
-} */
+}

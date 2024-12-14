@@ -31,7 +31,7 @@
     height: var(--side);
     position: absolute;
     top: var(--top);
-    left: -105px;
+    left: calc(var(--side) / -2);
     border-radius: var(--border-radius);
     background-color: var(--highlight-color-4);
 }
