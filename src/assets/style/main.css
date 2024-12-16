@@ -39,6 +39,7 @@
     --side: 200px;
     --top: 200px;
     --section: 99px;
+    --title-margin: 50px;
 }
 
 body {
@@ -168,5 +169,32 @@ table {
         --side: 100px;
         --top: 100px;
         --section: 60px;
+    }
+}
+
+@media (max-width: 1366px) {
+    :root {
+        --title-big: 80px;
+        --title-medium: 60px;
+        --title-small: 50px;
+        
+        --subtitle-big: 48px;
+        --subtitle-medium: 32px;
+        --subtitle-small: 28px;
+
+        --text-big: 24px;
+        --text-medium: 18px;
+        --text-small: 16px;
+
+        --title-margin: 30px;
+    }
+}
+
+@media (max-width: 1280px) {
+    :root {
+        --side: 80px;
+        --top: 80px;
+        --section: 40px;
+        --title-margin: 20px;
     }
 }

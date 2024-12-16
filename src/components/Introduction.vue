@@ -23,7 +23,7 @@
 </script>
 
 <style lang="scss" scoped>
-@use '../assets/style/main';
+@use '../assets/style/main.scss' as v;
 
 #introduction::before {
     content: '';
@@ -46,10 +46,17 @@
         overflow: hidden;
     }
     .media-kit {
-        padding: 100px;
-        background-color: var(--dark-color);
         grid-column: span 3 / span 3;
         grid-row: span 6 / span 6;
+
+        padding: 100px;
+        background-color: var(--dark-color);
+        @include v.media('1440px') {
+            padding: 80px;
+        }
+        @include v.media('1366px') {
+            padding: 50px;
+        }
         h3 {
             color: var(--highlight-color-4);
             margin-bottom: 60px;

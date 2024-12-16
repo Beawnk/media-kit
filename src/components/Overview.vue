@@ -52,10 +52,10 @@ onMounted(() => {
 </script>
 
 <style lang="scss" scoped>
-@use '../assets/style/main';
+@use '../assets/style/main.scss' as v;
 
 h2 {
-    margin-bottom: 50px;
+    margin-bottom: var(--title-margin);
     display: flex;
     align-items: center;
     &::after {
@@ -67,6 +67,10 @@ h2 {
         background-image: url('../assets/img/icons/eyes.png');
         background-size: contain;
         background-position: center;
+        @include v.media('1366px') {
+            width: 80px;
+            height: 80px;
+        }
     }
 }
 
@@ -89,6 +93,9 @@ h2 {
         border-radius: var(--border-radius);
         padding: 50px;
         overflow: hidden;
+        @include v.media('1366px') {
+            padding: 30px;
+        }
     }
     .total-reach {
         grid-column: span 2 / span 2;
@@ -121,6 +128,9 @@ h2 {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
             gap: 60px;
+            @include v.media('1366px') {
+                gap: 40px;
+            }
 
             .media-item {
                 .media-wrap {
@@ -132,6 +142,14 @@ h2 {
                         border-radius: var(--border-radius);
                         overflow: hidden;
                         margin-right: 20px;
+                        @include v.media('1910px') {
+                            width: 80px;
+                            height: 80px;
+                        }
+                        @include v.media('1366px') {
+                            width: 60px;
+                            height: 60px;
+                        }
                         img {
                             width: 100%;
                             height: 100%;
